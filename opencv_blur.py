@@ -8,3 +8,6 @@ cv2.imshow("blurred image", blurred)
 cv2.imshow("gausian blurred image", G_blurred)
 cv2.waitKey(1)
 cv2.destroyAllWindows
+
+
+ ##      output : https://github.com/DzouOnionGardener/OnionPy/blob/master/blur%20vs%20g-blur.png          ##
