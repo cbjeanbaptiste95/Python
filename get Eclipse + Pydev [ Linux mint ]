@@ -1,5 +1,9 @@
+************************************
+* INSTALLING ECLIPSE ON LINUX MINT *
+************************************
+
 sudo apt-get update
-sudo apt-get install openjdk-7-jdk   // make sure java is up to date
+sudo apt-get install openjdk-7-jdk                // make sure java is up to date
 download Eclipse Kepler standard 
 sudo mv Downloads/eclipse-standard-kepler-SR2-linux-gtk-x86_64.tar.gz /opt/
 cd /opt
@@ -23,3 +27,13 @@ sudo desktop-file-install /usr/share/applications/eclipse.desktop
 sudo ln -s /opt/eclipse/eclipse /usr/local/bin/
 
 Eclipse is now installed.
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+****************************
+* GETTING PYDEV ON ECLIPSE *
+****************************
+navigate to help > Eclipse Market Place > Find: "Pydev"
+install Pydev
+restart Eclipse
