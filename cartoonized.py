@@ -22,3 +22,5 @@ cv2.imwrite('edged_out_pudge.png', img_edge)
 ## await response & release resources
 cv2.waitKey(0)
 cv2.destroyAllWindows
+
+## output image : 
