@@ -23,4 +23,4 @@ cv2.imwrite('edged_out_pudge.png', img_edge)
 cv2.waitKey(0)
 cv2.destroyAllWindows
 
-## output image : 
+## output image : https://github.com/DzouOnionGardener/OnionPy/blob/master/edged_out_pudge.png
