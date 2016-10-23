@@ -24,4 +24,6 @@ cskt.close()
 
 ##  this might be the right way of doing it
 ## http://stackoverflow.com/questions/9852045/how-to-make-a-simple-proxy-in-python
-
+## http://voorloopnul.com/blog/a-python-proxy-in-less-than-100-lines-of-code/
+## http://www.binarytides.com/python-socket-server-code-example/
+## http://stackoverflow.com/questions/9852045/how-to-make-a-simple-proxy-in-python
