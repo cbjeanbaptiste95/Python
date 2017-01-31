@@ -58,42 +58,35 @@ class Perceptron(object):
                1  * self.weights[2])
         return self.transfer(avg)
     """
-    #Δw = α(t - y) x
-    #α = learning rate
+    #delta W = a(t - y) x
+    #alpha = learning rate
     #t = target
     #y = output
     #x = input
     #y = ((x*w) + (x*))
     """
     def learn(self, x0, x1, target):
-      output = Perceptron.__call__(x0,x1)
-      deltaW0 = 0
-      deltaW1 = 0
-      attempts = 0;
-      err = (target - output)
-      w0 = (x0 + deltaW0)
-      w1 = (x1 + deltaW1)
-      t1 = TwoStepFun()
-      if (output < t1.threshold):
-          deltaW0 = (0.2)*(err)*(x0)
-          deltaW1 = (0.2)*(err)*(x1)
-          self.learn(w0, w1,target)
-          print "attempting"
-      if ((err == 0) and (output == target)):
-          print "success"
+        output = self(x0, x1)
+        err = (target - output)
+        DeltaW0 = (0.2)*(err)*(x0)
+        DeltaW1 = (0.2)*(err)*(x1)
+
+        self.weights[0] += DeltaW0
+        self.weights[1] += DeltaW1
+        
           
-
-        
-
-      
-        
 
 if __name__ == "__main__":
     import doctest
     doctest.testmod()
     print doctest.testmod()
-    p2 = Perceptron(TwoStepFun(0.5))
-    p2.weights = [0.6, 0.6, 0.0]
-    bits = [0,1]
-    p2.learn(0.2,0.4, 1)
+    p = Perceptron(TwoStepFun(0.5))
+    attempts = 0
+    bits = [0,1] # bits 0 & 1 reflects true and falls in a truth table
+    for a in bits:
+        for b in bits:
+            attempts += 1
+            p.learn(a, b, (a*b))
+            print p.weights
+            print "attempts made: ", + attempts
     
